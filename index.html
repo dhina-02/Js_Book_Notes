@@ -16,39 +16,34 @@
     <nav>
       <h1>BookSky</h1>
     </nav>
-
     <div class="container">
       <div class="book-container">
         <span>
-        <h1>Rich Dad Poor Dad</h1>
-        <h2>Robert Kiyosaki</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque,
-          fuga!dolor sit amet consectetur adipisicing elit. sit amet consectetur
-          adipisicing elit.
-        </p>
+          <h1>Rich Dad Poor Dad</h1>
+          <h2>Robert Kiyosaki</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque,
+            fuga!dolor sit amet consectetur adipisicing elit. sit amet
+            consectetur adipisicing elit.
+          </p>
         </span>
         <button class="delete-btn">Delete</button>
       </div>
     </div>
-
-    <div class="add-con">
-      <button id="btn-add">+</button>
-    </div>
-
+    <div class="add-con"><button id="btn-add">+</button></div>
     <div class="pop-up-overlay"></div>
-
     <div class="pop-up">
       <h2>Book Details</h2>
-      <form action="#">
-        <input type="text" name="bname" id="book-name" placeholder="Enter book name" pattern="[A-Za-z0-9]+" required/>
-        <input type="text" name="aname" id="author-name" placeholder="Enter author name" pattern="[A-Za-z0-9]+" required/>
-        <textarea name="bookdes" id="book-description" cols="45" rows="10" placeholder="Enter description about book" maxlength="4000" pattern="[A-Za-z0-9]+" required></textarea><br>
+       <form action="#">
+        <input type="text" name="bname"id="book-name"placeholder="Enter book name" pattern="[A-Za-z0-9]+"required/>
+        <input type="text"id="author-name"placeholder="Enter author name"pattern="[A-Za-z0-9]+"required/>
+        <textarea name="bookdes"id="book-description"cols="45"rows="10"placeholder="Enter description about book"
+           maxlength="4000" pattern="[A-Za-z0-9]+"required>
+        </textarea><br />
         <button id="add-book">Add</button>
         <button id="cancel-book">Cancel</button>
-      </form>
+       </form>
     </div>
-
     <script src="assets/script.js"></script>
   </body>
 </html>
