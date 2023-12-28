@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background-color: #fff6f6;
+}
+nav {
+  background-color: #1cb15f;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 40px;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.book-container {
+  max-height: 600px;
+  width: 400px;
+  margin: 10px;
+  background-color: #fffb73;
+  color: #000000;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.book-container h1 {
+  background-color: #ffa33c;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  display: inline-block;
+}
+.book-container button {
+  border: none;
+  width: 70px;
+  height: 30px;
+  margin: 5px 10px;
+  border-radius: 10px;
+  background-color: #137358;
+  color: white;
+  cursor: pointer;
+}
+
+.add-con {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+#btn-add {
+  font-size: 50px;
+  border: none;
+  background-color: #005b41;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#btn-add:hover {
+  background-color: #02825e;
+  transform: scale(1.1);
+  transition: 300ms;
+}
+.pop-up-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #8a7a7aaf;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.pop-up {
+  width: 450px;
+  height: 400px;
+  background-color: #278076;
+  color: #000000;
+  z-index: 2;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
+}
+
+.pop-up input {
+  width: 90%;
+  height: 35px;
+  font-size: 17px;
+  padding: 0px 10px;
+  margin: 5px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  color: #ffffff;
+}
+.pop-up textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 5px;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  background-color: #f1eaea20;
+  color: #ffffff;
+}
+.pop-up input::placeholder,
+.pop-up textarea::placeholder {
+  opacity: 0.6;
+  color: #ffffff;
+}
+.pop-up button {
+  width: 70px;
+  height: 25px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  color: #000000;
+  background-color: #fffb73;
+   cursor: pointer;
+}
